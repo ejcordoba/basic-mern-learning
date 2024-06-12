@@ -14,4 +14,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to my RESTful API");
 });
 
+//Route to users api
+app.use("/api/users", require("./routes/user"));
+
 module.exports = app;

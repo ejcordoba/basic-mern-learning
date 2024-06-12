@@ -38,7 +38,7 @@ userController.updateUser = async (req, res) => {
 };
 
 userController.deleteUser = async (req, res) => {
-  await Usuario.findByIdAndDelete(req.params.id);
+  await User.findByIdAndDelete(req.params.id);
   res.json({ message: "User deleted" });
 };
 // Missing try,catch and validations with express
